@@ -35,7 +35,7 @@ const backend = {
 
 const frontend = {
 	'Web': {
-		'AppArchitecture': ['Single Page App', 'Server Side Rendering', 'MicroFrontends', 'Monolith'],
+		'Architecture': ['Single Page App', 'Server Side Rendering', 'MicroFrontends', 'Monolith'],
 		'JS Framework': ['React', 'Angular', 'Vue', 'Angular.js', 'Polymer'],
 		'Data Management': ['Redux', 'ReactiveX', 'Pub/Sub'],
 		'JS Versions': ['ES6', 'ES5', 'TypeScript'],
