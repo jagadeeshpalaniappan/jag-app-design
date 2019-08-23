@@ -3,7 +3,7 @@
 
 ```js
 const backend = {
-	'AppArchitecture': ['Microservices', 'Serverless', 'SOA', 'Monolithic'],
+	'Architecture': ['Microservices', 'Serverless', 'SOA', 'Monolithic'],
 	'API Design': ['REST', 'GraphQL', 'Webhooks', 'Websockets', 'gRPC', 'SOAP'],
 	'Stack': {
 		'Node': {
