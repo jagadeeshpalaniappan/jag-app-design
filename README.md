@@ -2,7 +2,6 @@
 ## Full Stack App Design -Options
 
 ```js
-
 const backend = {
 	'AppArchitecture': ['Microservices', 'Serverless', 'SOA', 'Monolithic'],
 	'API Design': ['REST', 'GraphQL', 'Webhooks', 'Websockets', 'gRPC', 'SOAP'],
@@ -62,6 +61,11 @@ const infra = {
 	'VCS': ['Github', 'GitLab', 'BitBucket']
 };
 
+const app = build(infra, backend, frontend);
+```
+
+### App Features
+```js
 const baseFeatures = {
 	'AuthManagementSystem(AMS)': {
 		'IAM': ['Auth0', 'UAA', 'Amazon Cognito', 'AWS IAM', 'GCP IAM']
@@ -70,9 +74,7 @@ const baseFeatures = {
 	'UserManagementSystem(UMS)': ['User CRUD'],
 	'FeatureManagementSystem (FMS)': []
 };
-
-const app = build(infra, backend, frontend, baseFeatures);
-
+app.addFeature(baseFeatures);
 
 ```
 
