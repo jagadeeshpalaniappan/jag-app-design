@@ -1,11 +1,10 @@
 
-## App Design Options
+## Full Stack App Design -Options
 
 ```js
-
 const backend = {
-	'AppArchitecture': ['Microservices', 'Serverless', 'SOA', 'Monolith'],
-	'API Design Pattern': ['REST', 'GraphQL', 'Webhooks', 'Websockets', 'gRPC', 'SOAP'],
+	'AppArchitecture': ['Microservices', 'Serverless', 'SOA', 'Monolithic'],
+	'API Design': ['REST', 'GraphQL', 'Webhooks', 'Websockets', 'gRPC', 'SOAP'],
 	'Stack': {
 		'Node': {
 			'API': ['Express'],
@@ -36,6 +35,7 @@ const backend = {
 
 const frontend = {
 	'Web': {
+		'AppArchitecture': ['Single Page App', 'Server Side Rendering', 'MicroFrontends', 'Monolith'],
 		'JS Framework': ['React', 'Angular', 'Vue', 'Angular.js', 'Polymer'],
 		'Data Management': ['Redux', 'ReactiveX', 'Pub/Sub'],
 		'JS Versions': ['ES6', 'ES5', 'TypeScript'],
@@ -45,7 +45,7 @@ const frontend = {
 		'Package Manager': ['NPM', 'Bower', 'JSPM']
 	},
 	'Mobile': ['React Native'],
-	'Desktop': ['Electron', 'React Native Desktop']
+	'Desktop': ['Electron', 'Nativefier', 'React Native Desktop']
 };
 
 const infra = {
@@ -71,7 +71,6 @@ const baseFeatures = {
 };
 
 const app = build(infra, frontend, backend, baseFeatures);
-
 
 
 ```
