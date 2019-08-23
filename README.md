@@ -1,4 +1,3 @@
-# jag-app-design
 
 ## App Design Options
 
@@ -8,24 +7,42 @@ const backend = {
 	'AppArchitecture': ['Microservices', 'Serverless', 'SOA', 'Monolith'],
 	'API Design Pattern': ['REST', 'GraphQL', 'Webhooks', 'Websockets', 'gRPC', 'SOAP'],
 	'Stack': {
-		'Node': ['Node.js', 'Express'],
-		'Java': ['Java', 'Spring Boot'],
-		'Python': ['Python', 'django']
+		'Node': {
+			'API': ['Express'],
+			'Versions': ['ES6', 'ES5', 'TypeScript'],
+			'Build Tools': ['WebPack', 'Gulp', 'Grunt'],
+			'Package Manager': ['NPM']
+		},
+		'Java': {
+			'API': ['Spring Boot'],
+			'Versions': ['Java8', 'Java7'],
+			'Build Tools': ['Maven', 'Ant'],
+			'Package Manager': ['Maven']
+		},
+		'Python': {
+			'API': ['django'],
+			'Build Tools': ['...'],
+			'Package Manager': ['...']
+		}
 	},
 	'Database': {
 		'NoSQL': ['MongoDB', 'Cassandra'],
 		'SQL': ['PostgreSQL', 'MySQL']
 	},
-	'Cache': ['Redis', 'Memcached']
-};
+	'Cache': ['Redis', 'Memcached'],
+	'Message Broker': ['Kafka', 'RabbitMQ', 'Redis-Pub/Sub'],
 
+};
 
 const frontend = {
 	'Web': {
 		'JS Framework': ['React', 'Angular', 'Vue', 'Angular.js', 'Polymer'],
-		'Data Management': ['Redux', 'ReactiveX'],
+		'Data Management': ['Redux', 'ReactiveX', 'Pub/Sub'],
+		'JS Versions': ['ES6', 'ES5', 'TypeScript'],
 		'CSS Framework': ['Bootstrap', 'Ant Design', 'Material', 'Foundation', 'Primer CSS'],
-		'Browser Cache': ['IndexedDB', 'LocalStorage', 'SessionStorage', 'Cookies']
+		'Browser Cache': ['IndexedDB', 'LocalStorage', 'SessionStorage', 'Cookies'],
+		'Build Tools': ['WebPack', 'Gulp', 'Grunt'],
+		'Package Manager': ['NPM', 'Bower', 'JSPM']
 	},
 	'Mobile': ['React Native'],
 	'Desktop': ['Electron', 'React Native Desktop']
@@ -33,14 +50,16 @@ const frontend = {
 
 const infra = {
 	'Cloud': {
-		'IaaS': ['AWS', 'GCP', 'Azure'],
-		'PaaS': ['CloudFoundry', 'Dockers & Kubernetes']
+		'IaaS': ['AWS-EC2', 'GCP-GoogleComputeEngine', 'Azure'],
+		'PaaS': ['Zeit', 'Netlify', 'CloudFoundry', 'Dockers & Kubernetes', 'GCP-GoogleAppEngine',],
+		'ServerLess': ['Lambda', 'Google Cloud Functions', 'Azure serverless']
 	},
 	'OnPrem': {
 		'Unix': ['Ubuntu']
-	}
+	},
+	'CI/CD': ['Jenkins', 'CircleCI', 'Github Actions'],
+	'VCS': ['Github', 'GitLab', 'BitBucket']
 };
-
 
 const baseFeatures = {
 	'AuthManagementSystem(AMS)': {
@@ -52,6 +71,7 @@ const baseFeatures = {
 };
 
 const app = build(infra, frontend, backend, baseFeatures);
+
 
 
 ```
