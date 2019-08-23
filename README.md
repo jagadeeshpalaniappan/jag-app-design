@@ -2,6 +2,7 @@
 ## Full Stack App Design -Options
 
 ```js
+
 const backend = {
 	'AppArchitecture': ['Microservices', 'Serverless', 'SOA', 'Monolithic'],
 	'API Design': ['REST', 'GraphQL', 'Webhooks', 'Websockets', 'gRPC', 'SOAP'],
@@ -70,7 +71,7 @@ const baseFeatures = {
 	'FeatureManagementSystem (FMS)': []
 };
 
-const app = build(infra, frontend, backend, baseFeatures);
+const app = build(infra, backend, frontend, baseFeatures);
 
 
 ```
