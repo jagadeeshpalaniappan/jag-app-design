@@ -1,5 +1,5 @@
 
-## Full Stack App Design -Options
+### Full-Stack App Design -Options
 
 ```js
 const backend = {
